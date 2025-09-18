@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompAI - Análise Estratégica para Pedreira</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-brain"></i> CompAI - Análise Estratégica para Pedreira</h1>
+            <p>Dashboard inteligente com IA para análise de custos, margens, produção e insights estratégicos para gestão de pedreiras</p>
+        </header>
+
+        <main>
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3><i class="fas fa-chart-line"></i> Data Analytics</h3>
+                    <div class="metric">
+                        <span class="value" id="dataPoints">1,234</span>
+                        <span class="label">Data Points Analyzed</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="refreshData()">Refresh Data</button>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fas fa-robot"></i> AI Insights</h3>
+                    <div class="insights-container">
+                        <div class="insight">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Performance trending upward by 15%</span>
+                        </div>
+                        <div class="insight">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Optimal efficiency detected in Sector A</span>
+                        </div>
+                        <div class="insight">
+                            <i class="fas fa-arrow-trend-up"></i>
+                            <span>Projected growth: 23% next quarter</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary" onclick="generateInsights()">Generate New Insights</button>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fas fa-database"></i> Data Visualization</h3>
+                    <div class="chart-container">
+                        <canvas id="dataChart" width="300" height="200"></canvas>
+                    </div>
+                    <button class="btn btn-success" onclick="updateChart()">Update Chart</button>
+                </div>
+
+                <div class="card">
+                    <h3><i class="fas fa-cogs"></i> System Status</h3>
+                    <div class="status-grid">
+                        <div class="status-item">
+                            <span class="status-indicator online"></span>
+                            <span>AI Engine: Online</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-indicator online"></span>
+                            <span>Data Pipeline: Active</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-indicator online"></span>
+                            <span>Analytics: Running</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-section">
+                <h3>Quick Actions</h3>
+                <div class="action-buttons">
+                    <button class="btn btn-outline" onclick="exportData()">
+                        <i class="fas fa-download"></i> Export Data
+                    </button>
+                    <button class="btn btn-outline" onclick="runAnalysis()">
+                        <i class="fas fa-play"></i> Run Analysis
+                    </button>
+                    <button class="btn btn-outline" onclick="scheduleReport()">
+                        <i class="fas fa-calendar"></i> Schedule Report
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>CompAI Dashboard - Deployed via GitHub Pages | Last Updated: <span id="lastUpdate"></span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
